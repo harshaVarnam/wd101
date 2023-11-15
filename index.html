@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrationForm</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <form action="#" name="SignupForm" onsubmit="return(validateHTMlform());">
+        <div class="container">
+            <ul>
+                <li>
+                    <h2>
+                        REGISTRATION FORM
+                    </h2>
+                </li>
+                <li>
+                    <label for="">
+                        Full Name<span>*</span>
+                    </label>
+                    <div>
+                        <input type="text" name=textnames id="textname" style="width: 300px;">
+                    </div>
+                </li>
+                <li>
+                    <label for="">
+                        E-mail <span>*</span>
+                    </label>
+                    <div>
+                        <input type="email" placeholder="eg:myname@gmail.com" name="email_id" id="emailid"
+                            style="width: 250px;">
+                    </div>
+                </li>
+                <li>
+                    <label for="">
+                        Phone Number<span>*</span>
+                    </label>
+                    <div>
+                        <input type="tel" name="mobilenumber" id="mobileno">
+                    </div>
+                </li>
+                <li>
+                    <label for="">
+                        College<span>*</span>
+                    </label>
+                    <div>
+                        <input type="text" name="collegename" id="collegename" style="width: 250px;">
+                    </div>
+                </li>
+                <li>
+                    <label for="">
+                        Course<span>*</span>
+                    </label>
+                    <div>
+                        <select name="Course">
+                            <option value="-1" selected>select..</option>
+                            <option value="B.Tech">B.TECH</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                            <option value="BCA">BCA</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <label for="">
+                        Gender<span>*</span>
+                    </label>
+                    <div>
+                        <input type="radio" name="sex" value="male">Male
+                        <br>
+                        <input type="radio" name="sex" value="Female">Female
+                    </div>
+                </li>
+
+                <li>
+                    <div id="sub">
+                        <input type="submit" value="Submit Form"
+                            style="width: 100px; margin: 0 15px; background-color: rgb(155, 211, 246);">
+                        <input type="reset" value="Reset Form"
+                            style="width: 100px; margin: 0 15px; background-color: rgb(155, 211, 246);">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
